@@ -1,0 +1,86 @@
+@import 'tailwindcss/components';
+
+@layer components {
+  button {
+    @apply outline-none;
+  }
+
+  button:active:enabled {
+    @apply scale-90;
+  }
+
+  button:disabled {
+    @apply cursor-not-allowed;
+  }
+
+  .btn {
+    @apply rounded
+    justify-center
+    items-center
+    py-1.5
+    px-1.5
+    flex
+    text-xs
+    font-semibold
+    cursor-pointer
+    transition-all
+    disabled:grayscale
+    lg:p-2;
+  }
+
+  .btn_small {
+    @apply rounded-sm py-[3px] px-2 text-xs cursor-pointer transition-all font-medium disabled:grayscale;
+  }
+
+  .btn_base {
+    @apply text-white
+    bg-secondary
+    hover:brightness-125;
+  }
+
+  .btn_yellow {
+    @apply text-gray-600
+    bg-yellow-400
+    hover:brightness-105;
+  }
+
+  .btn_green {
+    @apply text-white
+    bg-[#3ca877]
+    hover:brightness-110;
+  }
+
+  .btn_red {
+    @apply text-white
+    bg-red-600
+    hover:brightness-110;
+  }
+
+  .btn_blue {
+    @apply text-white
+    bg-blue-600
+    hover:brightness-125;
+  }
+
+  .btn_indigo {
+    @apply text-gray-200
+    bg-indigo-600
+    hover:brightness-125;
+  }
+
+  .btn_select {
+    @apply text-gray-300
+    font-mono
+    text-xs
+    border-b-2
+    border-transparent
+    px-3
+    py-1.5
+    transition-all
+    cursor-pointer
+    hover:brightness-110;
+    &-active {
+      @apply border-yellow-400 text-yellow-400;
+    }
+  }
+}

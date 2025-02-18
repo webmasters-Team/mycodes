@@ -1,0 +1,40 @@
+@import 'tailwindcss/components';
+
+@layer components {
+  .popup {
+    @apply fixed
+    top-0
+    left-0
+    flex
+    flex-col
+    items-center
+    justify-center
+    z-20
+    animate-popup
+    drop-shadow-lg
+    w-full
+    h-full;
+    &_header {
+      @apply flex
+      w-[90%]
+      max-w-xl
+      justify-between
+      items-center
+      bg-yellow-400
+      p-3
+      rounded-t-md;
+      svg {
+        @apply text-base transition-[colors_transform] hover:text-gray-600 active:scale-90;
+      }
+    }
+    &_content {
+      @apply px-4
+      pb-4
+      w-[90%]
+      max-w-xl
+      max-h-[60vh]
+      rounded-b-md
+      bg-white;
+    }
+  }
+}

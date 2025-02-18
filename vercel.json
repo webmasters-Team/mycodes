@@ -1,0 +1,31 @@
+{
+  "git": {
+    "deploymentEnabled": false
+  },
+  "rewrites": [
+    {
+      "source": "/css.worker.a66442f2.js",
+      "destination": "/assets/css.worker.a66442f2.js"
+    },
+    {
+      "source": "/html.worker.db20dbe1.js",
+      "destination": "/assets/html.worker.db20dbe1.js"
+    },
+    {
+      "source": "/ts.worker.08ec356f.js",
+      "destination": "/assets/ts.worker.08ec356f.js"
+    },
+    {
+      "source": "/json.worker.4fe6ce9c.js",
+      "destination": "/assets/json.worker.4fe6ce9c.js"
+    },
+    {
+      "source": "/editor.worker.29be4084.js",
+      "destination": "/assets/editor.worker.29be4084.js"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/"
+    }
+  ]
+}
